@@ -1,68 +1,71 @@
 /* Styles for all pages */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* --color-primary: #394A59;
+  --color-primary-light: #59758D;
+  --color-secondary: #36BF7F;
+  --color-accent: #D96666; */
+}
+
+.container {
+  width: min(65em, 100%);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
 body {
   font-family: 'Playfair Display', serif;
   line-height: 1.6;
   color: #edf5e1;
   background-color: #abdabc;
   margin: 0;
-  padding-top: 70px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-header {
+
+
+/* ************** Header Styles ******************* */
+
+
+.navbar {
   background: #292e2b;
-  padding: 15px;
   box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
   border-bottom: 2px solid #ffffff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; 
+  /* padding: 15px; */
+  /* position: fixed; */
+  /* top: 0; */
+  /* left: 0; */
+  /* width: 100%; */
+  /* z-index: 1000;  */
 }
 
-main {
-  flex: 1 0 auto;
-}
-
-footer {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #292e2b;
-  text-align: center;
-  padding: 20px;
-  box-shadow: 0px -1px 5px 5px rgba(0, 0, 0, 0.2);
-  border-top: 2px solid #ffffff;
-  box-sizing: border-box;
-  flex-shrink: 0;
-}
-
-nav ul {
-  list-style-type: none;
+.navbar .container {
   padding: 0;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: 1.5rem; */
+}
+
+.navbar ul {
+  list-style-type: none;
   text-align: center;
-}
-
-@media screen and (max-width: 800px) {
-  nav ul {
-      flex-direction: column;
-  }
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li a {
+  display: block;
   text-decoration: none;
   color: #ffffff;
   transition: background 0.3s, padding 0.3s;
   font-size: 18px;
-  padding: 10px;
+  padding: 1rem;
 }
 
 nav ul li a.active {
@@ -71,93 +74,142 @@ nav ul li a.active {
 }
 
 nav ul li a i {
-  margin-right: 5px;
+  margin-right: .5rem;
 }
 
-nav ul li a:hover {
+.navbar ul a:hover {
   background-color: #3a3e41;
-  padding: 15px;
-  border: 2px solid #ffffff;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  border: 0.125rem solid #ffffff;
 }
 
-#profile-pic {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  border: 5px solid #333;
-  max-width: 100%;
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 800px) {
-  #profile-pic {
-    width: 40%;
-    height: 40%
+@media only screen and (min-width: 47em) {
+  
+  .navbar ul {
+    display: flex;
+    justify-content: center;
   }
+
+  .navbar ul li a:hover {
+    padding: 1rem 1.4rem;
+    border: unset;
+  }
+
 }
+
+
+footer {
+  bottom: 0;
+  left: 0;
+  /* width: 100%; */
+  background: #292e2b;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0px -1px 5px 5px rgba(0, 0, 0, 0.2);
+  border-top: 2px solid #ffffff;
+  flex-shrink: 0;
+}
+
 
 /* Specific styles for index.html */
 #home main {
+  /* 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 80vh;
   text-align: center;
-  padding: 20px;
+  padding: 20px; 
+  */
+}
+
+main {
+  flex: 1;
+  padding-bottom: 3rem;
+}
+
+#profile-pic {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 5px solid #333;
+  max-width: 100%;
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/* @media (max-width: 800px) {
+  #profile-pic {
+    width: 40%;
+    height: 40%
+  }
+} */
+
+
+
+#home .intro .container {
+  padding-top: 3rem;
+  text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
 }
 
 #home .intro h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: #379683;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  /* color: #379683; */
   -webkit-text-fill-color:#334945;
   -webkit-text-stroke: 1px #000000;
 }
 
 #home .intro p {
-  font-size: 1.5em;
-  color: #379683;
+  font-size: 1.5rem;
+  /* color: #379683; */
   -webkit-text-fill-color:#334945;
   -webkit-text-stroke: 1px #000000;
 }
 
 
-#home .intro a:link { 
+#home .intro a { 
   text-decoration: none; 
-  color: #05386b;
+  /* color: #05386b; */
   -webkit-text-fill-color:#334945;
   -webkit-text-stroke: 1px #000000;
 }
 
 #home .intro a:visited { 
   text-decoration: none;
-  color: #05386b;
+  /* color: #05386b; */
   -webkit-text-fill-color:#334945;
   -webkit-text-stroke: 1px #000000;
 }
 
 #home .intro a:hover { 
   text-decoration: underline;
-  color: #05386b;
+  /* color: #05386b; */
   -webkit-text-fill-color:#334945;
   -webkit-text-stroke: 1px #000000;
 }
 
 #home .intro a:active { 
   text-decoration: none;
-  color: #05386b;
+  /* color: #05386b; */
   -webkit-text-fill-color:#334945;
   -webkit-text-stroke: 1px #000000;
 }
 
-/* Resume Styling */
 
-#resume .resume-container {
+
+/**************** Resume Styling ****************/
+
+
+#resume-page .resume-container {
   margin: 0 auto;
   max-width: 50%;
   border: 1px solid #000;
@@ -167,17 +219,17 @@ nav ul li a:hover {
   box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 }
 
-#resume .resume-container a:link,
-#resume .resume-container a:visited,
-#resume .resume-container a:hover,
-#resume .resume-container a:active { 
+#resume-page .resume-container a:link,
+#resume-page .resume-container a:visited,
+#resume-page .resume-container a:hover,
+#resume-page .resume-container a:active { 
   text-decoration: none; 
   color: #05386b;
   -webkit-text-fill-color:#334945;
   -webkit-text-stroke: 1px #000000;
 }
 
-#resume h1 {
+#resume-page h1 {
   font-size: 2.5em;
   color: #379683;
   -webkit-text-fill-color:#334945;
@@ -185,7 +237,7 @@ nav ul li a:hover {
   text-align: center;
 }
 
-#resume h2 {
+#resume-page h2 {
   font-size: 2em;
   color: #379683;
   -webkit-text-fill-color:#334945;
@@ -194,7 +246,7 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
-#resume .resume-container p {
+#resume-page .resume-container p {
   font-size: 1em;
   color: #379683;
   -webkit-text-fill-color:#334945;
@@ -202,20 +254,20 @@ nav ul li a:hover {
   text-align: center;
 }
 
-#resume #education h2,
-#resume #education p  {
+#resume-page #education h2,
+#resume-page #education p  {
   color: #379683;
   -webkit-text-fill-color:#334945;
   -webkit-text-stroke: 1px #000000;
   text-align: left;
 }
 
-#resume #education ul {
+#resume-page #education ul {
   color: #000000;
   padding-left: 20px;
 }
 
-#resume #education p strong {
+#resume-page #education p strong {
   font-size: 1.5em;
 }
 
@@ -239,7 +291,7 @@ nav ul li a:hover {
   -webkit-text-stroke: 1px #000000;
 }
 
-#resume #qualifications ul {
+#resume-page #qualifications ul {
   color: #000000;
   padding-left: 20px;
 }
@@ -288,7 +340,6 @@ nav ul li a:hover {
   text-align: center;
   width: 500px;
   height: 500px;
-  box-sizing: border-box;
   overflow-wrap: break-word;
   background-color: #e2e2e2;
 }
