@@ -114,6 +114,8 @@ footer {
 
 /* Specific styles for index.html */
 #home main {
+  flex: 1;
+  padding-bottom: 3rem;
   /* 
   display: flex;
   flex-direction: column;
@@ -123,11 +125,6 @@ footer {
   text-align: center;
   padding: 20px; 
   */
-}
-
-main {
-  flex: 1;
-  padding-bottom: 3rem;
 }
 
 #profile-pic {
@@ -175,54 +172,79 @@ main {
   -webkit-text-stroke: 1px #000000;
 }
 
-
-#home .intro a { 
+#home .intro a,
+#home .intro a:hover,
+#home .intro a:visited,
+#home .intro a:active {
   text-decoration: none; 
   /* color: #05386b; */
+  -webkit-text-fill-color:#334945;
+  -webkit-text-stroke: 1px #000000;
+}
+#home .intro a:hover {
+  text-decoration: underline;
+}
+
+/* #home .intro a {
+  &:hover,
+  &:active,
+  &:visited{
+    text-decoration: none;
+    -webkit-text-fill-color:#334945;
+    -webkit-text-stroke: 1px #000000;
+  }
+  
+} */
+
+
+/* #home .intro a { 
+  text-decoration: none; 
+  color: #05386b;
   -webkit-text-fill-color:#334945;
   -webkit-text-stroke: 1px #000000;
 }
 
 #home .intro a:visited { 
   text-decoration: none;
-  /* color: #05386b; */
+  color: #05386b;
   -webkit-text-fill-color:#334945;
   -webkit-text-stroke: 1px #000000;
 }
 
 #home .intro a:hover { 
   text-decoration: underline;
-  /* color: #05386b; */
+  color: #05386b;
   -webkit-text-fill-color:#334945;
   -webkit-text-stroke: 1px #000000;
 }
 
 #home .intro a:active { 
   text-decoration: none;
-  /* color: #05386b; */
+  color: #05386b;
   -webkit-text-fill-color:#334945;
   -webkit-text-stroke: 1px #000000;
-}
+} */
 
 
 
 /**************** Resume Styling ****************/
 
+#resume-page main .container {
+  padding-top: 3rem;
+}
 
-#resume-page .resume-container {
-  margin: 0 auto;
-  max-width: 50%;
+#resume-page .resume  {
   border: 1px solid #000;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: #e2e2e2;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 }
 
-#resume-page .resume-container a:link,
-#resume-page .resume-container a:visited,
-#resume-page .resume-container a:hover,
-#resume-page .resume-container a:active { 
+#resume-page .resume a:link,
+#resume-page .resume a:visited,
+#resume-page .resume a:hover,
+#resume-page .resume a:active { 
   text-decoration: none; 
   color: #05386b;
   -webkit-text-fill-color:#334945;
@@ -246,7 +268,7 @@ main {
   margin-bottom: 10px;
 }
 
-#resume-page .resume-container p {
+#resume-page .resume p {
   font-size: 1em;
   color: #379683;
   -webkit-text-fill-color:#334945;
