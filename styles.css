@@ -5,6 +5,7 @@
 }
 
 :root {
+  --text-fill: #334945
   /* --color-primary: #394A59;
   --color-primary-light: #59758D;
   --color-secondary: #36BF7F;
@@ -161,14 +162,14 @@ footer {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   /* color: #379683; */
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
 }
 
 #home .intro p {
   font-size: 1.5rem;
   /* color: #379683; */
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
 }
 
@@ -178,7 +179,7 @@ footer {
 #home .intro a:active {
   text-decoration: none; 
   /* color: #05386b; */
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
 }
 #home .intro a:hover {
@@ -190,7 +191,7 @@ footer {
   &:active,
   &:visited{
     text-decoration: none;
-    -webkit-text-fill-color:#334945;
+    -webkit-text-fill-color: var(--text-fill);
     -webkit-text-stroke: 1px #000000;
   }
   
@@ -200,28 +201,28 @@ footer {
 /* #home .intro a { 
   text-decoration: none; 
   color: #05386b;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
 }
 
 #home .intro a:visited { 
   text-decoration: none;
   color: #05386b;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
 }
 
 #home .intro a:hover { 
   text-decoration: underline;
   color: #05386b;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
 }
 
 #home .intro a:active { 
   text-decoration: none;
   color: #05386b;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
 } */
 
@@ -247,14 +248,14 @@ footer {
 #resume-page .resume a:active { 
   text-decoration: none; 
   color: #05386b;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
 }
 
 #resume-page h1 {
   font-size: 2.5em;
   color: #379683;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
   text-align: center;
 }
@@ -262,7 +263,7 @@ footer {
 #resume-page h2 {
   font-size: 2em;
   color: #379683;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
   border-bottom: solid #333;
   margin-bottom: 10px;
@@ -271,7 +272,7 @@ footer {
 #resume-page .resume p {
   font-size: 1em;
   color: #379683;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
   text-align: center;
 }
@@ -279,7 +280,7 @@ footer {
 #resume-page #education h2,
 #resume-page #education p  {
   color: #379683;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
   text-align: left;
 }
@@ -301,7 +302,7 @@ footer {
 
 #skills .skills-grid h3 {
   color: #379683;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
   border-bottom: #000 solid;
   text-align: center;
@@ -309,7 +310,7 @@ footer {
 
 #skills .skills-grid ul {
   color: #379683;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
 }
 
@@ -325,14 +326,14 @@ footer {
 #experience h3 {
   font-size: 1.3em;
   color: #379683;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
 }
 
 #experience h4, #experience h5 {
   font-size: 1em;
   color: #379683;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
   margin-bottom: 5px;
 }
@@ -375,7 +376,7 @@ footer {
   margin-top: 10px;
   font-size: 1.5em;
   color: #379683;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
 }
 
@@ -396,7 +397,7 @@ footer {
   margin-top: 10px;
   font-size: 1.2em;
   color: #379683;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
 }
 
@@ -405,7 +406,7 @@ footer {
   margin-top: 10px;
   font-size: 0.95em;
   color: #379683;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
 }
 
@@ -428,14 +429,14 @@ footer {
 .projects-container a:active { 
   text-decoration: none; 
   color: #05386b;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
 }
 
 .projects-container h1 {
   font-size: 2.5em;
   color: #379683;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
   text-align: center;
 }
@@ -443,7 +444,7 @@ footer {
 .projects-container h2 {
   font-size: 2em;
   color: #379683;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
   border-bottom: solid #333;
   margin-bottom: 10px;
@@ -453,7 +454,7 @@ footer {
 .projects-container p {
   font-size: 1em;
   color: #379683;
-  -webkit-text-fill-color:#334945;
+  -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px #000000;
   text-align: left;
 }
