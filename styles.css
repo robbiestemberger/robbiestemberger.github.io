@@ -5,7 +5,8 @@
 }
 
 :root {
-  --text-fill: #334945
+  --text-fill: #334945;
+  --text-stroke: #000;
   /* --color-primary: #394A59;
   --color-primary-light: #59758D;
   --color-secondary: #36BF7F;
@@ -13,7 +14,7 @@
 }
 
 .container {
-  width: min(60em, 100%);
+  width: min(65em, 100%);
   margin: 0 auto;
   padding: 0 .75rem;
 }
@@ -21,6 +22,16 @@
 @media only screen and (min-width: 45rem){
   .container{
     padding: 0 1.5rem;
+  }
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+@media only screen and (min-width: 45em) {
+  h1{
+  font-size: 3.5rem;
   }
 }
 
@@ -167,19 +178,17 @@ main {
 
 
 #home .intro h1 {
-  font-size: 2.5rem;
   margin-bottom: 1.5rem;
-
   /* color: #379683; */
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px var(--text-stroke);
 }
 
 #home .intro p {
   font-size: 1.5rem;
   /* color: #379683; */
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px var(--text-stroke);
 }
 
 #home .intro a,
@@ -189,7 +198,7 @@ main {
   text-decoration: none; 
   /* color: #05386b; */
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px var(--text-stroke);
 }
 #home .intro a:hover {
   text-decoration: underline;
@@ -201,7 +210,7 @@ main {
   &:visited{
     text-decoration: none;
     -webkit-text-fill-color: var(--text-fill);
-    -webkit-text-stroke: 1px #000000;
+    -webkit-text-stroke: 1px var(--text-stroke);
   }
   
 } */
@@ -211,29 +220,32 @@ main {
   text-decoration: none; 
   color: #05386b;
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px var(--text-stroke);
 }
 
 #home .intro a:visited { 
   text-decoration: none;
   color: #05386b;
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px var(--text-stroke);
 }
 
 #home .intro a:hover { 
   text-decoration: underline;
   color: #05386b;
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px var(--text-stroke);
 }
 
 #home .intro a:active { 
   text-decoration: none;
   color: #05386b;
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px var(--text-stroke);
 } */
+
+
+
 
 
 
@@ -259,14 +271,13 @@ main {
   text-decoration: none; 
   color: #05386b;
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px var(--text-stroke);
 }
 
 #resume-page h1 {
-  font-size: 2.5em;
   color: #379683;
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px var(--text-stroke);
   text-align: center;
 }
 
@@ -274,7 +285,7 @@ main {
   font-size: 2em;
   color: #379683;
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px var(--text-stroke);
   border-bottom: solid #333;
   margin-bottom: 10px;
 }
@@ -283,7 +294,7 @@ main {
   font-size: 1em;
   color: #379683;
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px var(--text-stroke);
   text-align: center;
 }
 
@@ -291,12 +302,12 @@ main {
 #resume-page #education p  {
   color: #379683;
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px var(--text-stroke);
   text-align: left;
 }
 
 #resume-page #education ul {
-  color: #000000;
+  color: var(--text-stroke);
   padding-left: 20px;
 }
 
@@ -313,7 +324,7 @@ main {
 #skills .skills-grid h3 {
   color: #379683;
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px var(--text-stroke);
   border-bottom: #000 solid;
   text-align: center;
 }
@@ -321,11 +332,11 @@ main {
 #skills .skills-grid ul {
   color: #379683;
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px var(--text-stroke);
 }
 
 #resume-page #qualifications ul {
-  color: #000000;
+  color: var(--text-stroke);
   padding-left: 20px;
 }
 
@@ -337,19 +348,19 @@ main {
   font-size: 1.3em;
   color: #379683;
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px var(--text-stroke);
 }
 
 #experience h4, #experience h5 {
   font-size: 1em;
   color: #379683;
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px var(--text-stroke);
   margin-bottom: 5px;
 }
 
 #experience ul {
-  color: #000000;
+  color: var(--text-stroke);
   padding-left: 20px;
 }
 
@@ -358,42 +369,87 @@ main {
 }
 
 #work ul li {
-  color: #000000;
+  color: var(--text-stroke);
   padding-left: 5px;
 }
 
-/* Courses Styling */
 
-.course {
-  border: 1px solid #000;
-  margin: 10px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-  text-align: center;
-  width: 500px;
-  height: 500px;
-  overflow-wrap: break-word;
-  background-color: #e2e2e2;
+
+
+
+
+
+
+/**************** Courses Styling ****************/
+
+.courses {
+
+  -webkit-text-fill-color: var(--text-fill);
+  -webkit-text-stroke: 1px var(--text-stroke);
+}
+
+.courses h1 {
+  margin: .5rem 0;
 }
 
 .course-controls {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
-  font-size: 1.5em;
-  color: #379683;
-  -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
+  flex-direction: column;
+  /* flex-flow: column wrap; */
+
+  margin-top: .75rem;
+  /* font-size: 1.5em; */
 }
 
+.course-controls input,
+.course-controls select,
+.course-controls button {
+  font-size: 1rem;
+  padding: .5rem;
+  border-radius: .5em;
+  margin-bottom: .5rem;
+  border-width: .065rem;
+}
+
+.course-controls input {
+  max-width: 25rem;
+}
+
+/* TODO: Fix weird default styles on some browsers like safari */
+.course-controls select {
+  align-self: flex-start;
+  margin-right: .5rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 45em){
+
+
+}
+
+
+/* TODO: Probably change to grid or something */
 #courseContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.course {
+  border: 1px solid #000;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 400px;
+  /* height: 400px; */
+  overflow-wrap: break-word;
+  background-color: #e2e2e2;
 }
 
 .course-thumbnail {
@@ -406,27 +462,24 @@ main {
 .course h3 {
   margin-top: 10px;
   font-size: 1.2em;
-  color: #379683;
-  -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
 }
 
 .course p {
   text-align: justify;
   margin-top: 10px;
   font-size: 0.95em;
-  color: #379683;
-  -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
 }
 
 
-/* Projects Styling */
+
+
+
+/**************** Projects Styling ****************/
 
 
 .projects {
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000;
+  -webkit-text-stroke: 1px var(--text-stroke);
 
 }
 
@@ -455,31 +508,26 @@ main {
 }
 
 .projects h1 {
-  font-size: 2.75rem;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   /* color: #379683;
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000; */
+  -webkit-text-stroke: 1px var(--text-stroke); */
   /* text-align: center; */
 }
 
 .project h2 {
+  font-size: 2rem;
   margin-top: 0.25rem;
-  font-size: 2em;
   border-bottom: solid #333;
   margin-bottom: 10px;
   /* text-align: center; */
   /* color: #379683;
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000; */
+  -webkit-text-stroke: 1px var(--text-stroke); */
 }
 
-@media only screen and (min-width: 45em) {
-.projects h1{
-  font-size: 3.5rem;
-}
-}
+
 
 .projects p {
   /* font-size: 1em;
@@ -487,5 +535,5 @@ main {
 
   /* color: #379683;
   -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px #000000; */
+  -webkit-text-stroke: 1px var(--text-stroke); */
 }
