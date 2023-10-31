@@ -389,13 +389,14 @@ main {
 }
 
 .courses h1 {
+  text-align: center;
   margin: .5rem 0;
 }
 
 .course-controls {
   display: flex;
   flex-direction: column;
-  /* flex-flow: column wrap; */
+  align-items: center;
 
   margin-top: .75rem;
   /* font-size: 1.5em; */
@@ -424,6 +425,7 @@ main {
 .controls {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 45em){
@@ -431,6 +433,10 @@ main {
 
 }
 
+.sort-btns {
+  display: flex;
+  justify-content: center;
+}
 
 /* TODO: Probably change to grid or something */
 #courseContainer {
@@ -513,7 +519,7 @@ main {
   /* color: #379683;
   -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px var(--text-stroke); */
-  /* text-align: center; */
+  text-align: center;
 }
 
 .project h2 {
