@@ -5,7 +5,7 @@
 }
 
 :root {
-  --text-fill: #334945;
+  --text-fill: #000;
   --text-stroke: #000;
   /* --color-primary: #394A59;
   --color-primary-light: #59758D;
@@ -26,7 +26,7 @@
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 @media only screen and (min-width: 45em) {
@@ -36,7 +36,7 @@ h1 {
 }
 
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Fira Sans', sans-serif;
   line-height: 1.6;
   color: #edf5e1;
   background-color: #abdabc;
@@ -157,36 +157,23 @@ main {
   box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-
-/* @media (max-width: 800px) {
-  #profile-pic {
-    width: 40%;
-    height: 40%
-  }
-} */
-
 #home .intro {
   padding-top: 3rem;
 }
 
 #home .intro .container {
   text-align: center;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
 }
 
 
 #home .intro h1 {
   margin-bottom: 1.5rem;
-  /* color: #379683; */
   -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px var(--text-stroke);
 }
 
 #home .intro p {
   font-size: 1.5rem;
-  /* color: #379683; */
   -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px var(--text-stroke);
 }
@@ -196,58 +183,12 @@ main {
 #home .intro a:visited,
 #home .intro a:active {
   text-decoration: none; 
-  /* color: #05386b; */
   -webkit-text-fill-color: var(--text-fill);
   -webkit-text-stroke: 1px var(--text-stroke);
 }
 #home .intro a:hover {
   text-decoration: underline;
 }
-
-/* #home .intro a {
-  &:hover,
-  &:active,
-  &:visited{
-    text-decoration: none;
-    -webkit-text-fill-color: var(--text-fill);
-    -webkit-text-stroke: 1px var(--text-stroke);
-  }
-  
-} */
-
-
-/* #home .intro a { 
-  text-decoration: none; 
-  color: #05386b;
-  -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px var(--text-stroke);
-}
-
-#home .intro a:visited { 
-  text-decoration: none;
-  color: #05386b;
-  -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px var(--text-stroke);
-}
-
-#home .intro a:hover { 
-  text-decoration: underline;
-  color: #05386b;
-  -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px var(--text-stroke);
-}
-
-#home .intro a:active { 
-  text-decoration: none;
-  color: #05386b;
-  -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px var(--text-stroke);
-} */
-
-
-
-
-
 
 /**************** Resume Styling ****************/
 
@@ -256,10 +197,9 @@ main {
 }
 
 #resume-page .resume  {
-  border: 1px solid #000;
   padding: 1.25rem;
   margin-bottom: 3rem;
-  background-color: #e2e2e2;
+  background-color: #eeeeee;
   border-radius: 1.25rem;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 }
@@ -399,7 +339,6 @@ main {
   align-items: center;
 
   margin-top: .75rem;
-  /* font-size: 1.5em; */
 }
 
 .course-controls input,
@@ -446,16 +385,14 @@ main {
 }
 
 .course {
-  border: 1px solid #000;
   margin: 10px 0;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
   text-align: center;
   width: 400px;
-  /* height: 400px; */
   overflow-wrap: break-word;
-  background-color: #e2e2e2;
+  background-color: #eeeeee;
 }
 
 .course-thumbnail {
@@ -490,17 +427,13 @@ main {
 }
 
 .projects .container {
-  /* padding: 0 5rem; */
   width: min(40em, 100%);
 }
 
 .project {
-  /* width: min(40rem, 100%); */
   padding: 1.5rem;
   margin-bottom: 2rem;
-  /* margin: 0 auto 2rem auto; */
-  border: 1px solid #000;
-  background-color: #e2e2e2;
+  background-color: #eeeeee;
   border-radius: 1.25rem;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 }
@@ -516,9 +449,6 @@ main {
 .projects h1 {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
-  /* color: #379683;
-  -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px var(--text-stroke); */
   text-align: center;
 }
 
@@ -527,19 +457,7 @@ main {
   margin-top: 0.25rem;
   border-bottom: solid #333;
   margin-bottom: 10px;
-  /* text-align: center; */
-  /* color: #379683;
-  -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px var(--text-stroke); */
 }
 
 
 
-.projects p {
-  /* font-size: 1em;
-  text-align: left; */
-
-  /* color: #379683;
-  -webkit-text-fill-color: var(--text-fill);
-  -webkit-text-stroke: 1px var(--text-stroke); */
-}

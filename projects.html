@@ -10,6 +10,9 @@
     <title>Robbie Stemberger - Projects</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="navbar">
@@ -18,8 +21,8 @@
                 <ul>
                     <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="resume.html"><i class="fas fa-file"></i> Resume</a></li>
+                    <li><a href="projects.html" class="active"><i class="fas fa-project-diagram"></i> Practical Experience</a></li>
                     <li><a href="courses.html"><i class="fas fa-book"></i> Courses</a></li>
-                    <li><a href="projects.html" class="active"><i class="fas fa-project-diagram"></i> Notable Projects</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,20 +30,28 @@
     <main>
         <section class="projects">
             <div class="container">
-                <h1>Notable Projects</h1>
+                <h1></h1>
             
                 <div class="project">
                     <h2>Portfolio Website</h2>
                     <p>This portfolio website is a personal project designed to house information regarding the courses that I have taken, my personal resume, and notable projects. This was coded with HTML, CSS, and JavaScript.</p>
+                    
+                    <h2>Java</h2>
+                    <p>Utilized Java to run programs that access databases where the user can view, add to, and delete data remotely through JDBC connections.</p>
+
+                    <h2>SQL</h2>
+                    <p>Used various DBMS and SQL to setup databases. Collaborated with peers to create databases that store historical information that can be used in CRUD-based web environments.</p>
+
+                    <h2>Linux</h2>
+                    <p>Utilized virtual Linux environments to test shell scripts, practice administrative duties such as setting permissions for users and files, and setup Jellyfin to host media.</p>
+
+                    <h2>VMWare</h2>
+                    <p>Installed and setup numerous virtual environments which include Linux desktops, mainly Ubuntu and CentOS7 & 8, Windows environments, and Windows Server 2016. Virtual environments were used to maintain servers and test shell scripting.</p>
+
+                    <h2>Networking</h2>
+                    <p>Experience with routing and switching done through Cisco Packet Tracer and Wireshark. CCNAv7: Introduction to Networks & Switching, Routing, and Wireless Essentials certifications achieved through Cisco NetAcad.</p>
                 </div>
 
-                <div class="project">
-                    <h2>Vinyl Record DBMS</h2>
-                    <p>A collaborative project in which a database was designed to store information pertaining to vinyl records. This project evolved several times over the course of ten weeks.</p>
-                    <p>The first version of this project involved integration between Microsoft Access and MySQL. This version featured basic information associated with vinyl records such as track lists, artist information, band members, etc.</p>
-                    <p>The second version of this project involved integration between Microsoft SQL Server, ODBC, and Microsoft Access. To further refine the data, reformatting of the code was required to work with Microsoft SQL Server. Additionally, triggers and views were created to display changes in the data and would store that information. In Microsoft Access forms were created that allowed for easy access to these adjusted tables.</p>
-                    <p>A final version of this project involved converting the database which was created and turning it into a function CRUD based website which used XAMPP to run the website on a local host. This process involved reformatting the code used to setup the database to function and display correctly in a website coded with PHP, JavaScript, and CSS.</p>
-                </div>
             </div>
         </section>
     </main>
