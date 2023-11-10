@@ -320,7 +320,7 @@ main {
 
 
 
-/**************** Courses Styling ****************/
+/**************** Courses Styling ****************
 
 .courses {
 
@@ -355,7 +355,7 @@ main {
   max-width: 25rem;
 }
 
-/* TODO: Fix weird default styles on some browsers like safari */
+/* TODO: Fix weird default styles on some browsers like safari 
 .course-controls select {
   align-self: flex-start;
   margin-right: .5rem;
@@ -377,7 +377,7 @@ main {
   justify-content: center;
 }
 
-/* TODO: Probably change to grid or something */
+/* TODO: Probably change to grid or something 
 #courseContainer {
   display: flex;
   flex-wrap: wrap;
@@ -412,9 +412,7 @@ main {
   margin-top: 10px;
   font-size: 0.95em;
 }
-
-
-
+*/
 
 
 /**************** Projects Styling ****************/
